@@ -1,23 +1,41 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction:column;
+}
+
+
 #navbar {
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
+    display:flex;
+    justify-content: flex-end;
+
+}
+ #navbar ul li{
+    display: inline;
+    justify-content: center;
+    margin-right: 0.5rem;
+
+    
+ }
+
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-body {
-    display: flex;
-    align-items: center;
-    flex-direction:column;
-}
 
 #welcome-section {
-    height: 100vh;
+    margin-top: 1.5rem;
 }
 
-@media screen and (min-width: 0px) {
-    #body {
-        background-color: #FFF;
-
-    }
+#project{
+    /* height: 100vh; */
 }
+
