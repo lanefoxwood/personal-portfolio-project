@@ -1,23 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction:column;
+}
+
+
 #navbar {
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
+    display:flex;
+    justify-content: center;
+
+}
+ #navbar ul li{
+    display: inline;
+    justify-content: center;
+    margin-right: 0.5rem;
+ }
+
+ a:hover{
+    background-color: #84a98cdf;
+    color: #354f52;
+    box-shadow: 0 0.5em 0.5em -0.4em #52796F;
+    transform: translateY(-0.25rem);
+ }
+ a {
+    text-decoration: none;
+    font-size: 1rem;
+    border: none;
+    background-color: #84A98C;
+    color: #354F52;
+    border-radius: .33rem;
+    padding: .33rem;
+    cursor: pointer;
+    transition: color 0.25s, box-shadow 0.25s,transform 0.25s;
+
+ }
+
+
+
+
+.main-container{
+    font-family: 'Comfortaa', cursive;
+    background-color: #cad2c5;
+    color: #2F3E46;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-body {
-    display: flex;
-    align-items: center;
-    flex-direction:column;
+
+#welcome-section h1{
+    font-family: 'Monoton', cursive;
+    font-size: 3rem;
+    margin-top: 3rem;
 }
 
 #welcome-section {
     height: 100vh;
 }
 
-@media screen and (min-width: 0px) {
-    #body {
-        background-color: #FFF;
-
-    }
+.resume-section {
+    display: block;
+    height: 100Vh;
+    padding-top: 2rem;
 }
+
+.resume-section:nth-of-type(even){
+    background-color: #c4ccbf;
+}
+
